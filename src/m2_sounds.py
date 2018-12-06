@@ -2,8 +2,8 @@
 An opportunity to explore how to make an EV3 Robot make sounds.
 
 Authors: Dave Fisher, David Mutchler, Vibha Alangar,
-         their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues, and Kirk Preston.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import simple_rosebotics as rb
 
@@ -37,7 +37,11 @@ def main():
                 (311.13, 250, 100), (466.16, 25, 100), (392.00, 300, 150),
                 (311.13, 250, 100), (466.16, 25, 100), (392, 700)]
 
-    talker = rb.Speech('hello')
-    talker.speak()
+    #talker1 = rb.Speech('hello how are you today Nelson')
+    #talker = rb.Speech('I think it is getting cold outside today, what do you say mate')
+    talker2 = rb.Song(fun_song*20)
+    #talker1.speak()
+    #talker.speak()
+    talker2.play()
 
 main()
